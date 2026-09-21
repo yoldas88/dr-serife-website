@@ -64,12 +64,29 @@ body{
     text-align:center;
     padding:40px;
 }
+
+.whatsapp-button{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    z-index:999;
+    transition:0.3s;
+}
+
+.whatsapp-button:hover{
+    background:#1ea952;
+    transform:scale(1.05);
+}
+
 </style>
-
-</head>
-
-<body>
-
+  
 <section class="hero">
 
 <img
@@ -220,6 +237,15 @@ loading="lazy">
     <p>Denizli</p>
     <p>Demo Web Sitesi</p>
 </footer>
+
+<a
+class="whatsapp-button"
+href="https://wa.me/905055000748?text=Merhaba%20Dr.%20%C5%9Eerife%20Yolda%C5%9F%20Aslan%20i%C3%A7in%20randevu%20almak%20istiyorum."
+target="_blank">
+
+📱 WhatsApp ile Randevu Al
+
+</a>
 
 </body>
 </html>
