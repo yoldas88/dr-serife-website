@@ -120,6 +120,49 @@ body{
     margin:0 10px;
     cursor:pointer;
 }
+
+.review-slider{
+    overflow:hidden;
+    width:100%;
+    margin-top:30px;
+}
+
+.review-track{
+    display:flex;
+    gap:20px;
+    width:max-content;
+    animation: scrollReviews 40s linear infinite;
+}
+
+.review-card{
+    width:320px;
+    background:white;
+    padding:25px;
+    border-radius:16px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    flex-shrink:0;
+}
+
+.review-card p{
+    line-height:1.7;
+}
+
+.review-stars{
+    color:#f5b301;
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+@keyframes scrollReviews{
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+}    
+
     
 </style>
   
@@ -247,22 +290,7 @@ Tüm Hasta Yorumlarını Gör →
 
 </div>
 
-<div class="review-slider">
 
-    <div id="reviewText" class="review-text">
-        "Doktor hanım bilgili ve tecrübelerinin yanında çok ilgili ve alakalı."
-    </div>
-
-    <div class="review-stars">
-        ★★★★★
-    </div>
-
-    <div class="review-buttons">
-        <button onclick="prevReview()">← Önceki</button>
-        <button onclick="nextReview()">Sonraki →</button>
-    </div>
-
-</div>
 
 
     
