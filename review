@@ -131,11 +131,11 @@ body{
     display:flex;
     gap:20px;
     width:max-content;
-    animation: scrollReviews 40s linear infinite;
+    animation: scrollReviews 80s linear infinite;
 }
 
 .review-card{
-    width:320px;
+    width:260px;
     background:white;
     padding:25px;
     border-radius:16px;
@@ -290,9 +290,7 @@ Tüm Hasta Yorumlarını Gör →
 
 </div>
 
-<div class="card">
-    ...
-</div>
+
 
 <div class="review-slider">
 
