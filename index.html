@@ -190,9 +190,28 @@ height:180px;
     to{
         transform:translateX(-50%);
     }
-}    
+}
 
-    
+.appointment-button{
+    position:fixed;
+    right:20px;
+    bottom:90px;
+    background:#2563eb;
+    color:white;
+    padding:15px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    z-index:999;
+    transition:0.3s;
+}
+
+.appointment-button:hover{
+    background:#1d4ed8;
+    transform:scale(1.05);
+}
+
 </style>
 </head>
  
@@ -425,7 +444,16 @@ Fiziksel Tıp ve Rehabilitasyon Uzmanı
 📍 Denizli
 </p>
 </footer>
+    
+<a
+class="appointment-button"
+href="https://calendly.com/drserifeyoldasaslan/30min"
+target="_blank">
 
+📅 Online Randevu Al
+
+</a>
+    
 <a
 class="whatsapp-button"
 href="https://wa.me/905055000748?text=Merhaba%20Dr.%20%C5%9Eerife%20Yolda%C5%9F%20Aslan%20i%C3%A7in%20randevu%20almak%20istiyorum."
