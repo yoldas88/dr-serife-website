@@ -36,26 +36,52 @@ body{
 }
 
 .cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
 }
-
+ 
 .card{
-    background:white;
-    border-radius:16px;
-    padding:25px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+background:white;
+border-radius:16px;
+padding:25px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+ 
+min-height:260px;
+ 
+display:flex;
+flex-direction:column;
+ 
+transition:0.3s ease;
 }
-
+ 
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+ 
+.card h3{
+margin-top:0;
+margin-bottom:20px;
+color:#0f766e;
+}
+ 
+.card p{
+line-height:1.5;
+}
+ 
+.card p:last-child{
+margin-top:auto;
+}
+ 
 .card a{
-    color:#0f766e;
-    text-decoration:none;
-    font-weight:bold;
+color:#0f766e;
+text-decoration:none;
+font-weight:bold;
 }
-
+ 
 .card a:hover{
-    text-decoration:underline;
+text-decoration:underline;
 }
 
 .footer{
